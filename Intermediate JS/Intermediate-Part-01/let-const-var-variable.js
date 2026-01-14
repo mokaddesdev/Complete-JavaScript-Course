@@ -1,5 +1,5 @@
 //!Topics 
-//?  === String/Template Literals, Var vs Let vs Const, Module, Spread Operator, Rest Parameter, Destructuring, Default value ===
+//?  === String/Template Literals, Var vs Let vs Const===
 
 //? 1.1 String Literal
 let firstName = "Mokaddes ALi";
@@ -26,26 +26,3 @@ console.log(` lastName1 : ${lastName1}`);
 let productPrice = 1200;
 productPrice = 1500;
 console.log(`productPrice : ${productPrice}`);
-
-//! What is Module?
-const add = ( numb1, numb2 ) => {
-    return numb1 + numb2;
-}
-const sub = ( numb1, numb2 ) => {
-    return numb1 - numb2;
-}
-console.log( add( 10, 20 ) );
-console.log( sub( 20, 10 ) );
-const person = {
-    name : 'Mokaddes ALi',
-    age : 35,
-    nationality : 'Bangladeshi',
-    printInfo: () => {
-        console.log( 'Hello I am printInfo' );
-    }
-}
-console.log( person.name );
-console.log( person.age );
-console.log( person.nationality );
-console.log( person.printInfo );
-

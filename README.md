@@ -95,14 +95,15 @@
 ## JavaScript Intermediate Part-01
 - ES6, ES7
     - String/template literals
-    - details var vs let vs const
+    - Details var vs let vs const
     - Arrow function
     - Module
+    - Spread operator
+    - Rest parameter
+    - Destructure
+    - Default value
 
 - Number and Math method
-- module 
-    - spread Operator, Rest parameter
-    - Destructure
     - higher order function: map, filter, foreach, reduce, callback function
     - Error handling
 ## JavaScript Intermediate Part-02
