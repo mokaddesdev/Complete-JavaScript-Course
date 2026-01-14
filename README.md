@@ -93,14 +93,18 @@
 - callback and higher order function
 
 ## JavaScript Intermediate Part-01
-- Error handling
 - ES6, ES7
-- details var vs let vs const
+    - String/template literals
+    - details var vs let vs const
+    - Arrow function
+    - Module
+
 - Number and Math method
 - module 
     - spread Operator, Rest parameter
     - Destructure
     - higher order function: map, filter, foreach, reduce, callback function
+    - Error handling
 ## JavaScript Intermediate Part-02
     - Asynchronous programming: async, await, then, catch, callback
     - Api calling
