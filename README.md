@@ -103,10 +103,19 @@
     - Destructure
     - Default value
 
-- Number and Math method
-    - higher order function: map, filter, foreach, reduce, callback function
-    - Error handling
 ## JavaScript Intermediate Part-02
+- ES6,
+    - callback function
+    - higher order function: 
+            - for loop
+            - map()
+            - filter()
+            - foreach()
+            - reduce()
+            - some()
+            - every()
+            - sort()
+    - Error handling
     - Asynchronous programming: async, await, then, catch, callback
     - Api calling
     - Json
