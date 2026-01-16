@@ -104,7 +104,7 @@
     - Default value
 
 ## JavaScript Intermediate Part-02
-- ES6,
+- ES6
     - callback function
     - higher order function: 
             - for loop
@@ -115,9 +115,26 @@
             - some()
             - every()
             - sort()
-    - Error handling
-    - Asynchronous programming: async, await, then, catch, callback
-    - Api calling
-    - Json
+## JavaScript Intermediate Part-03
+- Error handling
+-JSON vs JavaScript Object
+- JSON
+    - JSON.stringify() => JSObject to JSON
+    - JSON.parse() => JSON to JS Object
+- localstorage
+    - setItem()
+    - getItem()
+    - removeItem()
+    - clear()
+- Asynchronous vs Synchronous
+- event loop
+- Asynchronous programming:
+    - callback
+    - promise
+    - async
+    - await
+    - then
+- Api calling
+
     - Dom and event handler
 
