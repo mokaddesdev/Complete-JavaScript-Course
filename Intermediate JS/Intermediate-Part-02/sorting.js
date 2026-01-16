@@ -5,9 +5,20 @@ const products = [
     { id: 4, name: 'Daynabook 40c Pro', brand: 'Toshiba', category: 'laptop', price: 45000, createdAt: new Date(2025, 7, 27) },
     { id: 5, name: 'HP Elite 40c Pro', brand: 'HP', category: 'laptop', price: 55000, createdAt: new Date(2026, 0, 12) },
 ];
-
-const printProducts = (products) => {
-    console.log(JSON.stringify(products, null, 2));
+// function to display menu
+const displayMenu = () => {
+    const menu = `
+        1. Sort By Name(A-Z)
+        2. Sort By Name(Z-A)
+        3. Sort By Price(Low to High)
+        4. Sort By Price(High to Low)
+        5. Sort By date(old to newrest)
+        6. Sort By date(newrest to old)
+        `
+    return menu;
+}
+const printProducts = ( productsArray ) => {
+    console.log(JSON.stringify(productsArray, null, 2));
 };
 
 // const choice = '2';
@@ -41,36 +52,73 @@ const printProducts = (products) => {
 
 // printProducts(sortedProducts);
 
+//! copy product array in another array
+let productsArray = [...products];
+
+//! soritng function
+const sortByNameAZ = ( productsArray ) => {
+    return productsArray.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+const sortByNameZA = ( productsArray ) => {
+    return productsArray.sort((a, b) => b.name.localeCompare(a.name));
+}
+
+const sortByPriceLowToHigh = ( productsArray ) => {
+    return productsArray.sort((a, b) => a.price - b.price);
+}
+
+const sortByPriceHighToLow = ( productsArray ) => {
+    return productsArray.sort((a, b) => b.price - a.price);
+}
+
+const sortByDateOldToNew = ( productsArray ) => {
+    return productsArray.sort((a, b) => a.createdAt - b.createdAt);
+}
+
+const sortByDateNewToOld = ( productsArray ) => {
+    return productsArray.sort((a, b) => b.createdAt - a.createdAt);
+}
+
+console.log(displayMenu());
 const choice = prompt('Enter string 1-6');
-let sortedProducts = [...products];
+
 
 switch (choice) {
     case '1':
-        sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+        sortByNameAZ(productsArray);
+        printProducts( productsArray );
         break;
 
     case '2':
-        sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+        sortByNameZA(productsArray);
+        printProducts( productsArray );
         break;
 
     case '3':
-        sortedProducts.sort((a, b) => a.price - b.price);
+        sortByPriceLowToHigh(productsArray);
+        printProducts( productsArray );
         break;
 
     case '4':
-        sortedProducts.sort((a, b) => b.price - a.price);
+        sortByPriceHighToLow(productsArray);
+        printProducts( productsArray );
         break;
 
     case '5':
-        sortedProducts.sort((a, b) => a.createdAt - b.createdAt);
+        sortByDateOldToNew(productsArray);
+        printProducts( productsArray );
         break;
 
     case '6':
-        sortedProducts.sort((a, b) => b.createdAt - a.createdAt);
+        sortByDateNewToOld(productsArray);
+        printProducts( productsArray );
         break;
+
+    default:
+        console.log('Invalid Choice');
 }
 
-printProducts(sortedProducts);
 
 //! Create a function for all operator
 const sortOperation = () => {
