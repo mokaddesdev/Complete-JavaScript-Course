@@ -10,16 +10,17 @@ console.log(multi(10,5));
 console.log(divi(10,5));
 console.log(modu(10,5));
 
+//TODO Method Example
 //! When function use in object than call method
 const calculator = {
     name : 'Mokaddes Ali',
     age : 25,
     cgpa : 3.16,
-    add: (numb1, numb2) => numb1 + numb2,
-    sub: (numb1, numb2) => numb1 - numb2,
-    multi: (numb1, numb2) => numb1 * numb2,
-    divi: (numb1, numb2) => numb1 / numb2,
-    modu: (numb1, numb2) => numb1 % numb2,
+    add: (numb1, numb2) => numb1 + numb2, // method
+    sub: (numb1, numb2) => numb1 - numb2, // method
+    multi: (numb1, numb2) => numb1 * numb2, // method
+    divi: (numb1, numb2) => numb1 / numb2, //method
+    modu: (numb1, numb2) => numb1 % numb2, //method
 }
 console.log(calculator.name);
 console.log(calculator.age);

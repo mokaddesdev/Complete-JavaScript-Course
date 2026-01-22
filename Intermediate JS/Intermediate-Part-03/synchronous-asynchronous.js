@@ -14,7 +14,7 @@ setTimeout(() =>{
 }, 2000)
 console.log('Task 4 completed');
 console.log('Task 5 completed');
-
+w
 //! Promise Asynchoronous -> pending, resolve, reject
 //! API Call
 //? JS global object => window

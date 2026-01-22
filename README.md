@@ -84,11 +84,14 @@
 ## JavaScript Basic Part-04
 - function vs method
     - function ( traditional vs arrow function)
-    - Method
-        - Number
-        - Date
-        - Math
-        - Array
+    - function vs method
+    - loop in object
+    - Dot notation and Brackets notation
+    - Built in function( pre defined method )
+        - Number related method
+        - Date related method
+        - Math related method
+        - Array related method
         - String methods
 - callback and higher order function
 
