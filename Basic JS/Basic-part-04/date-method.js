@@ -35,3 +35,14 @@ console.log(`dateObj.getMonth => ${dateObj.getMonth()}`);
 console.log(`dateObj.getSeconds => ${dateObj.getSeconds()}`);
 console.log(`dateObj.getTime => ${dateObj.getTime()}`);
 console.log(`dateObj.getFullYear => ${dateObj.getFullYear()}`);
+
+const currentDate = new Date();
+console.log( currentDate );
+console.log(currentDate.toDateString());
+console.log(currentDate.toISOString())
+console.log(currentDate.toLocaleString())
+console.log(currentDate.toLocaleDateString())
+console.log(currentDate.toLocaleTimeString())
+console.log(currentDate.getUTCFullYear())
+console.log(currentDate.getUTCMonth())
+console.log(currentDate.getUTCHours())
