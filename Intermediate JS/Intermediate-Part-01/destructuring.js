@@ -34,3 +34,10 @@ const [ first,second,third ] = colors;
 console.log(first);
 console.log(second);
 console.log(third);
+
+const mokaddes = [ 'Mokaddes Ali', 26, 'Dhaka', 'English' ];
+const [ fname, fage, fcity, flang ] = mokaddes;
+console.log(fname);
+console.log(fage);
+console.log(fcity);
+console.log(flang);
