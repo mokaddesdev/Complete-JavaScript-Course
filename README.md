@@ -107,6 +107,10 @@
     - Default value
 
 ## JavaScript Intermediate Part-02
+- This Keyword
+    - apply() method
+    - call() method
+    - bind() method
 - ES6
     - callback function
     - higher order function: 
