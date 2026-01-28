@@ -107,10 +107,6 @@
     - Default value
 
 ## JavaScript Intermediate Part-02
-- This Keyword
-    - apply() method
-    - call() method
-    - bind() method
 - ES6
     - callback function
     - higher order function: 
@@ -142,6 +138,13 @@
     - await
     - then
 - Api calling
+## JavaScript Intermediate Part -05
+- This keyword and use this related method
+    - apply() method
+    - call() method
+    - bind() method
+- Object in JavaScript
+    - wrapper function
 
     - Dom and event handler
 
