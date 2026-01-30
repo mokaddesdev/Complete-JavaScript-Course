@@ -1,4 +1,5 @@
-//! Wrapper Function => Wrapper function -> premitive data type convert into object data type
+//! Wrapper Function =>
+// ! Wrapper function -> premitive data type convert into object data type
 const string = 'My Name is Mokaddes Ali';
 console.log(string)
 console.dir(string);
