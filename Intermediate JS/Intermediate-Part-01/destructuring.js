@@ -41,3 +41,12 @@ console.log(fname);
 console.log(fage);
 console.log(fcity);
 console.log(flang);
+
+const mokaddesuser = [ 'Mokaddes Ali', 'Student', 25 ];
+const userName = mokaddesuser[0];
+const userJob = mokaddesuser[1];
+const userAge = mokaddesuser[2];
+console.log(userName);
+console.log(userAge);
+console.log(userJob);
+//! avid above this for destructuring
