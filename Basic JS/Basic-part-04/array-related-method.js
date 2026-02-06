@@ -1,3 +1,5 @@
+//? ES5 nodelist to convert array
+const nodeToArray = Array.prototype.slice.call(NodeList);
 
 const printArray = (items) => {
     for ( const item of items ) {
