@@ -26,3 +26,15 @@ if ( ( aNum > bNum ) && ( aNum > cNum ) ) {
 } else {
     console.log(`${cNum} is maximum number`);
 }
+
+//! Logical Operator
+const a = 20;
+const b = 30;
+const c = 40;
+if ( a > b && b > c ) {
+    console.log( `${a} is the maximum number.` );
+} else if ( b > a && b > c ) {
+    console.log( `${b} is the maximum number` );
+} else {
+    console.log( `${c} is the maximum number` );
+}
