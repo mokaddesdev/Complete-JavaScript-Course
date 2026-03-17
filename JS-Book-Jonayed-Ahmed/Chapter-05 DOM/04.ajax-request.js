@@ -35,5 +35,21 @@ request2.send();
 request2.onreadystatechange = function handleRequst(){
 
     console.log(request2.readyState);
-    
+
+}
+
+const request3 = new XMLHttpRequest;
+request3.open('GET', 'https://jsonplaceholder.typicode.com/post', true );
+request3.onreadystatechange = function handleRequst(){
+    if( request3.readyState === 4 ) {
+        console.log( JSON.parse(request3.responseText));
+    }
+}
+
+const request4 = new XMLHttpRequest;
+request4.open('GET', 'https://jsonplaceholder.typicode.com/post', true );
+request4.onreadystatechange = function handleRequst(){
+    if( request4.readyState === 4 && request.status === 200 ) {
+        console.log( JSON.parse(request3.responseText));
+    }
 }
