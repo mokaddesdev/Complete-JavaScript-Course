@@ -21,6 +21,8 @@ const promise = Promise.all([
   import('./calc.js'),
 ]);
 
-console.log(sayHi());
-console.log(sayHola());
-console.log(promise);
+// console.log(promise);
+promise.then(result => {
+    console.log( result[0].sayHi() );
+    console.log( result[1].sum(30,40) );
+});
