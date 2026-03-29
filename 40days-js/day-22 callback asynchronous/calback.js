@@ -1,3 +1,4 @@
+/*
 console.log( "Assync JavaScript - callback" ); // synchronous
 setTimeout( () => {
     console.log( "waiting done after two second." );
@@ -24,18 +25,53 @@ function sayText() {
 }
 
 greet( 'Mokaddes', sayText );
+*/
 
+/*
 function orderPizza( type, name ) {
-    query(`api/pizzahub/`, function( result, error ) {
+    query(`https://dummyjson.com/products`, function( result, error ) {
         if ( ! error ) {
             let shopId = result[0];
             console.log( shopId );
-            let result =
         }
     }
 )
 }
 orderPizza( 'veg', 'Mergherita' );
+*/
+
+function fetchProduct() {
+    const fetchData = fetch( `https://dummyjson.com/products/1` )
+    .then( res => {
+            return res.json()
+    })
+    .then( data => {
+        return console.log( data );
+    }
+    )
+    .catch( error => console.log(error) );
+
+    return fetchData;
+}
+
+// console.log( fetchProduct() );
+fetchProduct();
+
+const dummyProdutcs = ( endpoint, callback, options ) => {
+    fetch( `https://dummyjson.com/${endpoint}`, options )
+    .then( response => {
+        return response.json();
+    })
+    .then( data => {
+            return callback( data );
+    })
+}
+
+const productData = ( data ) => {
+    console.log( data );
+}
+
+dummyProdutcs( 'products', productData );
 
 //! - Promise
 //! - async/await keywords
