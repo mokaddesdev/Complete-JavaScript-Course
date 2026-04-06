@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<section class="app">
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+            <!-- Header -->
+            <div class="header">
+                <h1>💰 Expense Tracker</h1>
+            </div>
+
+            <!-- Balance Summary -->
+            <div class="summary">
+                <div class="card">
+                    <h3>Total Balance</h3>
+                    <p>$5,200</p>
+                </div>
+                <div class="card expense">
+                    <h3>Total Expense</h3>
+                    <p>$1,800</p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form class="form">
+                
+                <label>Type</label>
+                <select>
+                    <option>Income</option>
+                    <option>Expense</option>
+                    <option>Saving</option>
+                </select>
+
+                <label>Amount</label>
+                <input type="number" placeholder="Enter amount">
+
+                <label>Date</label>
+                <input type="date">
+
+                <div class="row">
+                    <div>
+                        <label>Category</label>
+                        <input type="text" placeholder="Food / Salary">
+                    </div>
+                    <div>
+                        <label>Note</label>
+                        <input type="text" placeholder="Optional">
+                    </div>
+                </div>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+
+            <h2>Transaction History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+               <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-briefcase icon salary"></i> Income</td>
+                        <td>$2000</td>
+                        <td>2026-04-01</td>
+                        <td>Salary</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-wallet icon expense"></i> Expense</td>
+                        <td>$150</td>
+                        <td>2026-04-02</td>
+                        <td>Food</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-wallet icon expense"></i> Expense</td>
+                        <td>$300</td>
+                        <td>2026-04-03</td>
+                        <td>Shopping</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-piggy-bank icon saving"></i> Saving</td>
+                        <td>$500</td>
+                        <td>2026-04-04</td>
+                        <td>Bank</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="./main.js"></script>
+</body>
+</html>

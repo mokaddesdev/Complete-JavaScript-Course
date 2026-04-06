@@ -19,5 +19,4 @@
  * - [] Destructuring use cases in JS?
  * - [] How to swap value with destructuring?
  * - [] How to merge arrays?
- * 
  */
