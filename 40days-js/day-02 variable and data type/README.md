@@ -1,11 +1,4 @@
-# 🚀 40 Days of JavaScript  
-## 📅 Day 02 - Data Types & Variables
-
-<p align="center">
-![JavaScript Load](./images/stack-heap.png)
-</p>
-
----
+# 📅 Day 02 - Data Types & Variables
 
 ## 📖 Introduction
 
@@ -28,3 +21,5 @@ These concepts are the building blocks of any JavaScript program.
 
 ```js
 console.log("data type");
+```
+![JavaScript Load](./images/stack-heap.png)
